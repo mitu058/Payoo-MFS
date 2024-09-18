@@ -16,7 +16,7 @@ console.log(phoneNumber, pinNumber)
 // step-4: validate phone & pin .(temporaray method it is not proper way)
 if(phoneNumber === '5' && pinNumber==='1234'){
     console.log('you are loged in')
-    window.location.href = '/home.html'
+    window.location.href = './home.html'
 }
 
 else{
