@@ -8,7 +8,18 @@ document.getElementById('btn-login')
 event.preventDefault() //vejal to begginers
 console.log('button clicked')
 
-// step-3: get the phone number
+// step-3: get the phone number and pin number
 const phoneNumber = document.getElementById('phone-number').value
-console.log(phoneNumber)
+const pinNumber = document.getElementById('pin-number').value
+console.log(phoneNumber, pinNumber)
+
+// step-4: validate phone & pin .(temporaray method it is not proper way)
+if(phoneNumber === '5' && pinNumber==='1234'){
+    console.log('you are loged in')
+    window.location.href = '/home.html'
+}
+
+else{
+    alert('wrong phone or pin')
+}
 })
