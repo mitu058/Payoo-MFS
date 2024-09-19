@@ -5,7 +5,7 @@
 document.getElementById('btn-login') 
 .addEventListener('click',function(event){
     // step-2: prevent default behaviour (prevent reloading browser)
-event.preventDefault() //vejal to begginers
+event.preventDefault() 
 console.log('button clicked')
 
 // step-3: get the phone number and pin number
@@ -14,8 +14,8 @@ const pinNumber = document.getElementById('pin-number').value
 console.log(phoneNumber, pinNumber)
 
 // step-4: validate phone & pin .(temporaray method it is not proper way)
-if(phoneNumber === '5' && pinNumber==='1234'){
-    console.log('you are loged in')
+if(phoneNumber === '01725' && pinNumber==='1234'){
+   
     window.location.href = './home.html'
 }
 
